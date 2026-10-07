@@ -63,6 +63,8 @@ body{background:radial-gradient(ellipse at top,#e6ebdf,transparent 65%),var(--bg
 .dish{margin-bottom:26px}.dish .em{height:250px;border-radius:18px}.dish .tag{top:14px;left:14px;border-radius:30px;padding:7px 10px;letter-spacing:1px;font-size:9px;background:#fffefbec;box-shadow:0 2px 12px #0001}.dish .row{gap:12px;margin-top:12px;padding:0 3px}.dish .row b{font-size:16px;letter-spacing:-.3px}.dish-description{font-size:12px;line-height:1.6;color:var(--mut);margin:6px 0 8px}.pr{font-size:14px}.fab{flex:none;width:42px;height:42px;box-shadow:0 4px 12px #243d3420}.fab:hover,.btn:hover{filter:brightness(1.12)}
 .nav{background:#fffefbf5;backdrop-filter:blur(12px);z-index:10}.bar{z-index:11;box-shadow:0 8px 25px #243d3430}.sheet{background:#fffefb}.sheet .hero{height:310px}.sheet .hero>button{z-index:1;box-shadow:0 2px 10px #0002}.line .em{width:68px;height:72px}.btn{border-radius:10px}.panel,.oc,.tb{border:1px solid var(--ln);box-shadow:0 5px 20px #243d3405}.oc.sel{border:2px solid var(--rust)}.top{padding:20px 0;border-bottom:1px solid var(--ln);margin-bottom:20px}.top>div>b{font:24px Georgia,serif}.panel h3{font-family:Georgia,serif}.ticket-photos{display:flex;gap:6px}.ticket-photos img{width:46px;height:46px;border-radius:9px;object-fit:cover;border:1px solid var(--ln)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.menu-products{align-self:start;align-content:start}
+button:disabled{cursor:default;opacity:.65}
 </style></head><body>
 <div id="demo"></div><div id="app"></div><div id="toast" role="status"></div>
 <script>
@@ -80,7 +82,7 @@ const PHOTOS={1:"burger",2:"avocado",3:"smash",4:"mushroom",5:"fries",6:"steak",
 const photo=m=>m?`<img class="food-photo" src="assets/${PHOTOS[m.id]||"restaurant"}.jpg" alt="${esc(m.n)}" loading="lazy" decoding="async">`:"";
 const CATS=["Burgers","Mains","Sides","Drinks","Desserts"];
 const L=(id,o,q=1)=>{const m=MENU.find(x=>x.id==id);return{id,n:m.n,o,p:m.p,q}};
-const seed=()=>({mode:"guest",gv:"menu",cat:"All",sel:null,sz:0,ex:[],qty:1,cart:[],
+const seed=()=>({mode:"guest",gv:"menu",cat:"All",sel:null,sz:0,ex:[],qty:1,cart:[],waiterRequests:[],nextWaiterRequest:1,
  menu:JSON.parse(JSON.stringify(MENU)),mc:"Burgers",me:1,
  orders:[
  {id:1024,t:5,s:"preparing",at:"19:34",items:[{...L(1,"Single Patty · Extra Cheddar"),p:205},L(2,"Standard"),L(5,"Standard")]},
@@ -117,6 +119,10 @@ function guest(){
   <div class="cats">${["All",...CATS].map(c=>`<button class="chip ${S.cat==c?"on":""}" data-a="cat" data-v="${c}">${c}</button>`).join("")}</div>
   ${items.map(m=>`<div class="dish" data-a="open" data-v="${m.id}" role="button" tabindex="0"><div class="em">${photo(m)}</div>${m.tag?`<span class="tag">${m.tag}</span>`:""}<div class="row"><div><b>${m.n}</b><p class="dish-description">${esc(m.d)}</p><div class="pr">${fm(m.p)}</div></div><button class="fab" data-a="quick" data-v="${m.id}" aria-label="Quick add ${esc(m.n)}">+</button></div></div>`).join("")}
   ${cartCount()?`<button class="bar" data-a="gv" data-v="cart"><span>${cartCount()} items · ${fm(cartTotal())}</span><span>View Order →</span></button>`:""}`;
+ }
+ if(S.gv=="service"){
+  const request=[...S.waiterRequests].reverse().find(r=>r.t==5),pending=request&&request.status=="pending";
+  h+=`<div class="gh"><h1>Table Service</h1><span class="badge">Table 05</span></div><div class="pad"><div class="stat" style="padding:32px 20px"><div style="font-size:42px" aria-hidden="true">🙋</div><b>${pending?"Your waiter has been called":request?"Your waiter is on the way":"Need a hand?"}</b><p style="color:var(--mut)">${pending?"The team has received your request for Table 05. We'll be with you shortly.":request?"The team has acknowledged your request for Table 05.":"Questions about a dish, extra cutlery, or anything else? Your waiter is a tap away."}</p><button class="btn r" data-a="callwaiter" ${pending?"disabled":""}>${pending?"Request sent · Waiting for the team":"Call waiter · طلب الويتر"}</button>${request?`<p style="font-size:12px;color:var(--mut)" role="status">Requested at ${esc(request.at)} · ${pending?"Awaiting acknowledgement":"Acknowledged by the team"}</p>`:""}</div></div>`;
  }
  if(S.gv=="status"){
   const o=[...S.orders].reverse().find(x=>x.t==5&&x.s!="served");
@@ -159,13 +165,15 @@ function guest(){
   ${m.ex.length?`<b>Extras</b> <span style="color:var(--mut)">Optional · up to 3</span><div style="margin-top:8px">${m.ex.map((x,k)=>`<button class="opt ${S.ex.includes(k)?"on":""}" data-a="ex" data-v="${k}"><span>${S.ex.includes(k)?"☑":"＋"} <b>${x[0]}</b></span><span class="pr">+${x[1]} EGP</span></button>`).join("")}</div>`:""}</div>
   <div class="foot"><div class="qty"><button data-a="q" data-v="-1" aria-label="Decrease">−</button>${S.qty}<button data-a="q" data-v="1" aria-label="Increase">+</button></div><button class="btn" style="flex:1;display:flex;justify-content:space-between" data-a="add"><span>Add to Order</span><span>${fm(unit*S.qty)}</span></button></div></div>`;
  }
- if(!S.sel&&S.gv!="cart")h+=`<nav class="nav"><button class="${S.gv=="menu"?"on":""}" data-a="gv" data-v="menu"><span>🍴</span>Menu</button><button class="${S.gv=="status"?"on":""}" data-a="gv" data-v="status"><span>🧾</span>My Order</button></nav>`;
+ if(!S.sel&&S.gv!="cart")h+=`<nav class="nav"><button class="${S.gv=="menu"?"on":""}" data-a="gv" data-v="menu"><span>🍴</span>Menu</button><button class="${S.gv=="status"?"on":""}" data-a="gv" data-v="status"><span>🧾</span>My Order</button><button class="${S.gv=="service"?"on":""}" data-a="gv" data-v="service"><span>🙋</span>طلب الويتر${S.waiterRequests.some(r=>r.t==5&&r.status=="pending")?" · ●":""}</button></nav>`;
  return h+`</div>`;
 }
 /* ---------- POS ---------- */
 function pos(){
  const act=S.orders.filter(o=>o.s!="served");
  let h=`<div id="p"><div class="top"><div><b>Quiet Table</b> <span class="badge">POS</span><div style="font-size:11px;color:var(--mut)">Main Branch · Karim A. (Cashier Lead)</div></div><div class="nv">${[["orders","Orders"],["tables","Tables"],["menu","Menu"]].map(([k,l])=>`<button class="${S.pv==k||(k=="tables"&&S.pv=="table")?"on":""}" data-a="pv" data-v="${k}">${l}</button>`).join("")}</div><span class="badge ready">● Online · Shift #2</span><span class="av">K</span></div>`;
+ const requests=S.waiterRequests.filter(r=>r.status=="pending");
+ if(requests.length)h+=`<section aria-label="Waiter requests" aria-live="polite">${requests.map(r=>`<div class="alert"><div><b>🙋 Waiter requested · Table ${String(r.t).padStart(2,"0")}</b><div style="font-size:12px;margin-top:4px">Requested at ${esc(r.at)} · Guest needs assistance</div></div><button class="btn r" data-a="ackwaiter" data-v="${r.id}">Acknowledge · تم الاستجابة</button></div>`).join("")}</section>`;
  if(S.pv=="orders"){
   const cnt=s=>act.filter(o=>o.s==s).length,list=act.filter(o=>(S.of=="all"||o.s==S.of)&&(!S.q||(`#${o.id} table ${o.t} `+o.items.map(i=>i.n).join(" ")).toLowerCase().includes(S.q.toLowerCase())));
   const so=S.orders.find(o=>o.id==S.so);
@@ -193,7 +201,7 @@ function pos(){
   const all=S.menu,list=all.filter(m=>S.mc=="All"||m.c==S.mc),e=all.find(m=>m.id==S.me);
   h+=`<div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:8px"><div><h2>Menu Management</h2><p class="sub" style="margin:0">Manage your categories, dishes, prices and guest ordering availability.</p></div><button class="btn r" data-a="addp">⊕ Add Product</button></div>
   <div class="tabs" style="margin-top:14px">${["All",...CATS].map(c=>`<button class="chip ${S.mc==c?"on":""}" data-a="mc" data-v="${c}">${c} ${c=="All"?all.length:all.filter(m=>m.c==c).length}</button>`).join("")}</div>
-  <div class="split"><div class="grid2">${list.map(m=>`<div class="oc ${S.me==m.id?"sel":""}" data-a="me" data-v="${m.id}" style="${m.a?"":"opacity:.6"}"><div class="em" style="height:120px;border-radius:10px;font-size:48px;${m.a?"":"filter:grayscale(1)"}">${photo(m)}</div><div class="hd"><span>${esc(m.n)}</span><span class="pr">${fm(m.p)}</span></div><small style="color:var(--mut)">${m.c} · ${m.sz.length} variants · ${m.ex.length} extras</small><div class="ft"><small style="color:${m.a?"var(--ok)":"var(--mut)"}">${m.a?"● Live in Menu":"● Unavailable (Hidden)"}</small><button class="btn l" data-a="me" data-v="${m.id}">Edit</button></div></div>`).join("")}</div>
+  <div class="split"><div class="grid2 menu-products">${list.map(m=>`<div class="oc ${S.me==m.id?"sel":""}" data-a="me" data-v="${m.id}" style="${m.a?"":"opacity:.6"}"><div class="em" style="height:120px;border-radius:10px;font-size:48px;${m.a?"":"filter:grayscale(1)"}">${photo(m)}</div><div class="hd"><span>${esc(m.n)}</span><span class="pr">${fm(m.p)}</span></div><small style="color:var(--mut)">${m.c} · ${m.sz.length} variants · ${m.ex.length} extras</small><div class="ft"><small style="color:${m.a?"var(--ok)":"var(--mut)"}">${m.a?"● Live in Menu":"● Unavailable (Hidden)"}</small><button class="btn l" data-a="me" data-v="${m.id}">Edit</button></div></div>`).join("")}</div>
   <div class="panel">${e?`<small style="color:var(--mut)">PRODUCT EDITOR</small><h3 style="margin:2px 0 12px">${esc(e.n)}</h3><label>Dish Name<input data-in="en" value="${esc(e.n)}"></label><label>Category<select data-in="ec">${CATS.map(c=>`<option ${c==e.c?"selected":""}>${c}</option>`).join("")}</select></label><label>Base Price (EGP)<input type="number" min="0" data-in="ep" value="${e.p}"></label><label>Description<textarea rows="3" data-in="ed">${esc(e.d)}</textarea></label>
   <div class="oc" style="flex-direction:row;justify-content:space-between;align-items:center;cursor:default;background:#eaf4ff"><div><b>Available for Ordering</b><br><small>When turned off, guests cannot order this dish. Still visible to staff in POS.</small></div><button class="sw ${e.a?"on":""}" data-a="avail" data-v="${e.id}" role="switch" aria-checked="${!!e.a}" aria-label="Available for ordering"></button></div>
   <h4>Portion Sizes / Variants</h4>${e.sz.map(s=>`<div class="it"><span>${s[0]}</span><b>${s[1]?"+"+s[1]:"Base"} EGP</b></div>`).join("")}<button class="btn" style="width:100%;margin-top:14px" data-a="save">Save changes</button>`:"<p>Select a dish to edit.</p>"}</div></div>`;
@@ -208,6 +216,13 @@ function A(a,v){
  const addLine=(m,sz,ex,q)=>{const opt=[m.sz[sz][0],...ex.map(i=>m.ex[i][0])].join(" · "),p=m.p+m.sz[sz][1]+ex.reduce((x,i)=>x+m.ex[i][1],0),f=S.cart.find(l=>l.id==m.id&&l.o==opt);f?f.q+=q:S.cart.push({id:m.id,n:m.n,o:opt,p,q})};
  switch(a){
  case"mode":S.mode=v;break;case"reset":S=seed();S.tables.find(t=>t.n==4).st="billing";toast("Demo reset");break;
+ case"callwaiter":{
+  if(S.waiterRequests.some(r=>r.t==5&&r.status=="pending")){toast("Your waiter has already been called");break}
+  S.waiterRequests.push({id:S.nextWaiterRequest++,t:5,status:"pending",at:new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:"Africa/Cairo"})});toast("Waiter requested for Table 05");break;
+ }
+ case"ackwaiter":{
+  const request=S.waiterRequests.find(r=>r.id==+v);if(request&&request.status=="pending"){request.status="acknowledged";toast(`Waiter request acknowledged · Table ${request.t}`)}break;
+ }
  case"gv":S.gv=v;break;case"cat":S.cat=v;break;
  case"open":S.sel=+v;S.sz=0;S.ex=[];S.qty=1;break;case"close":S.sel=null;break;
  case"quick":{addLine(S.menu.find(m=>m.id==v),0,[],1);toast("Added to order");break}
