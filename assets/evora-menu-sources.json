@@ -1,0 +1,832 @@
+[
+  {
+    "n": "Plain Omelette",
+    "c": "Omelettes",
+    "p": 119.99,
+    "d": "أومليت سادة بالزبدة على التوست المحمص. يقدم مع سلطة هاوس وقطع بطاطس بالزبدة.",
+    "image": "assets/omelette-photos.png",
+    "illustrative": false,
+    "source": "Menu image supplied by owner",
+    "id": 1,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "BREAKFAST",
+    "img": null,
+    "photoStatus": "generated-illustration",
+    "photoPosition": "0% 0%"
+  },
+  {
+    "n": "Spanish Omelette",
+    "c": "Omelettes",
+    "p": 179.99,
+    "d": "أومليت بالطماطم والفلفل والبصل والمشروم على التوست المحمص. يقدم مع سلطة هاوس وقطع بطاطس بالزبدة.",
+    "image": "assets/omelette-photos.png",
+    "illustrative": false,
+    "source": "Menu image supplied by owner",
+    "id": 2,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "BREAKFAST",
+    "img": null,
+    "photoStatus": "generated-illustration",
+    "photoPosition": "100% 0%"
+  },
+  {
+    "n": "Pastrami Omelette",
+    "c": "Omelettes",
+    "p": 249.99,
+    "d": "أومليت بالبسطرمة على التوست المحمص. يقدم مع سلطة هاوس وقطع بطاطس بالزبدة.",
+    "image": "assets/omelette-photos.png",
+    "illustrative": false,
+    "source": "Menu image supplied by owner",
+    "id": 3,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "BREAKFAST",
+    "img": null,
+    "photoStatus": "generated-illustration",
+    "photoPosition": "0% 100%"
+  },
+  {
+    "n": "Mexican Omelette",
+    "c": "Omelettes",
+    "p": 289.99,
+    "d": "أومليت محشو باللحم الحار والهالبينو ومغطى بالجبنة، على التوست المحمص. يقدم مع سلطة هاوس وقطع بطاطس بالزبدة.",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Mexican-omelette.png?w=1000&ssl=1",
+    "illustrative": false,
+    "source": "Menu image supplied by owner",
+    "id": 4,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "BREAKFAST",
+    "img": "evora-dish-4"
+  },
+  {
+    "n": "Salmon Omelette",
+    "c": "Omelettes",
+    "p": 334.99,
+    "d": "أومليت بالسلمون المدخن والجبنة الكريمية على التوست المحمص. يقدم مع سلطة هاوس وقطع بطاطس بالزبدة.",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Salmon-omelette-scaled.jpg?w=1000&ssl=1",
+    "illustrative": false,
+    "source": "Menu image supplied by owner",
+    "id": 5,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "BREAKFAST",
+    "img": "evora-dish-5"
+  },
+  {
+    "n": "Cheese Omelette",
+    "c": "Omelettes",
+    "p": 229.99,
+    "d": "أومليت غني بالجبنة على التوست المحمص. يقدم مع سلطة هاوس وقطع بطاطس بالزبدة.",
+    "image": "assets/omelette-photos.png",
+    "illustrative": false,
+    "source": "Menu image supplied by owner",
+    "id": 6,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "BREAKFAST",
+    "img": null,
+    "photoStatus": "generated-illustration",
+    "photoPosition": "100% 100%"
+  },
+  {
+    "n": "Chicken Shell",
+    "c": "Appetizers",
+    "p": 139.99,
+    "url": "https://evora-eg.com/product/chicken-shell/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/09/IMG_9521.jpg?w=1000&ssl=1",
+    "d": "دجاج بصوص كريمي وجبنة، يُقدم داخل قشرة شِل مقرمشة.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 7,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-7",
+    "descriptionSource": "https://evora-eg.com/product/chicken-shell/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CREAMY CHICKEN WITH CHEESE, SERVED IN CRISPY SHELL"
+  },
+  {
+    "n": "Chicken Wings",
+    "c": "Appetizers",
+    "p": 149.99,
+    "url": "https://evora-eg.com/product/chicken-wings/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/IMG_9520.jpg?w=1000&ssl=1",
+    "d": "أجنحة دجاج محمّرة بصوص العسل والسريراتشا الحار، داخل قشرة تورتيلا مقرمشة، مع ساور كريم وخس وأصابع خضار.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 8,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-8",
+    "descriptionSource": "https://evora-eg.com/product/chicken-wings/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "ROASTED CHICKEN WINGS, TOSSED IN HONEY SRIRACHA, WERVED IN CRISPY TORTILLA SHELL, WITH SOUR \nCREAM, LETTUCE, VEGE STICKS"
+  },
+  {
+    "n": "Shrimp Konafa",
+    "c": "Appetizers",
+    "p": 159.99,
+    "url": "https://evora-eg.com/product/shrimp-konafa/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/shrimp-kunafa-scaled.jpg?w=1000&ssl=1",
+    "d": "جمبري ملفوف بخيوط الكنافة المقرمشة، يُقدم مع صوص سويت تشيلي الحلو الحار.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 9,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-9",
+    "descriptionSource": "https://evora-eg.com/product/shrimp-konafa/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CRISPY SHRIMP ROLLED W. KONAFA, SERVED WITH SWEET CHILI SAUCE"
+  },
+  {
+    "n": "Beef Mexican Nachos",
+    "c": "Appetizers",
+    "p": 179.99,
+    "url": "https://evora-eg.com/product/beef-mexican-nachos/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/beef-mexican-nachos-scaled.jpg?w=1000&ssl=1",
+    "d": "رقائق ناتشوز مكسيكية مقرمشة مع لحم بقري حار وصوص جبنة وهالبينو.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 10,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-10",
+    "descriptionSource": "https://evora-eg.com/product/beef-mexican-nachos/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CRISPY MEXICAN NACHOS W. CHILI BEEF, CHEESE SAUCE, JALAPENO"
+  },
+  {
+    "n": "Jumbo Steak",
+    "c": "Beef Dishes",
+    "p": 529.99,
+    "url": "https://evora-eg.com/product/jumbo-steak/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Jumbo-steak-.webp?w=1000&ssl=1",
+    "d": "فيليه لحم بقري بالزبدة بوزن ٣٢٠ جم على شرائح توست، مع اختيار صوص المشروم أو الفلفل أو المستردة.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 11,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-11",
+    "descriptionSource": "https://evora-eg.com/product/jumbo-steak/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "320 GM OF JUMBO TENDERLOIN BUTTERED BEEF FILLET, SERVED ON TOASTED BREAD SLICES, WITH YOUR CHOICE OF SAUCE ( MUSHROOM – PEPPER – MUSTARD)"
+  },
+  {
+    "n": "Beef Triple Sauce",
+    "c": "Beef Dishes",
+    "p": 399.99,
+    "url": "https://evora-eg.com/product/beef-triple-sauce/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/beef-triple-sauce-scaled.jpg?w=1000&ssl=1",
+    "d": "ثلاث قطع من فيليه اللحم البقري؛ كل قطعة بصوص مختلف: الفلفل والمشروم والمستردة.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 12,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-12",
+    "descriptionSource": "https://evora-eg.com/product/beef-triple-sauce/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "THREE PIECES OF BEEF TENDERLOIN, EACH PIECE COVERED WITH DIFFERENT SAUCES OF( PEPPER, MUSHROOM,AND MUSTARD)"
+  },
+  {
+    "n": "Truffle Cream Rib Eye",
+    "c": "Beef Dishes",
+    "p": 849.99,
+    "url": "https://evora-eg.com/product/truffle-cream-rib-eye/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/09/IMG_9526.jpg?w=1000&ssl=1",
+    "d": "ريب آي جنوب أفريقي مطهو بالزبدة مع كريمة الترافل الأسود، على بطاطس مهروسة بالبيستو وجزر ومشروم سوتيه.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 13,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-13",
+    "descriptionSource": "https://evora-eg.com/product/truffle-cream-rib-eye/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "SOUTH AFRICAN RIB EYE COOKED IN BUTTER, SERVED WITH CREAMY BLACK TRUFFLE, ON PESTO MASHED \nPOTATO& SAUTED CARROTS, MUSHROOM"
+  },
+  {
+    "n": "Bacon Benedict",
+    "c": "Breakfast",
+    "p": 189.99,
+    "url": "https://evora-eg.com/product/bacon-benedict/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Bacon-omelette-1.png?w=1000&ssl=1",
+    "d": "بيض بندكت طري فوق بيكون بقري ومشروم بالزبدة وتوست محمص، مغطى بصوص هولنديز.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 14,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-14",
+    "descriptionSource": "https://evora-eg.com/product/bacon-benedict/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "SOFT BENEDICT EGGS ON A BED OF BEEF BACON, BUTTERED MUSHROOM& TOASTED BREAD, COVERD WITH HOLLANDAISE SAUCE"
+  },
+  {
+    "n": "Farmer Sunny Side",
+    "c": "Breakfast",
+    "p": 169.99,
+    "url": "https://evora-eg.com/product/farmer-sunny-side/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/farmer-sunnyside.jpg?w=1000&ssl=1",
+    "d": "طاسة بطاطس مع بصل وفلفل ومشروم وبيكون، يعلوها بيض عيون وصوص جبنة.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 15,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-15",
+    "descriptionSource": "https://evora-eg.com/product/farmer-sunny-side/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "SIZZLING HOME MADE POTATOS, ONION, PEPPER, MUSHROOM, BACON, COVERD WITH SUNNY SIDE EGG, CHEESE SAUCE"
+  },
+  {
+    "n": "Croque Madame",
+    "c": "Breakfast",
+    "p": 159.99,
+    "url": "https://evora-eg.com/product/croque-madame/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Croque-madame1.png?w=1000&ssl=1",
+    "d": "خبز بني محشو بالتركي المدخن والجبنة، مغطى بالبشاميل والجبنة وبيضة عيون.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 16,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-16",
+    "descriptionSource": "https://evora-eg.com/product/croque-madame/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "BROWN BREAD STUFFED WITH SMOKED TURKEY, CHEESE, TOPPED WITH BACHAMEL, CHEESE& SUNNY SIDE EGG"
+  },
+  {
+    "n": "Triple Chicken",
+    "c": "Chicken Dishes",
+    "p": 299.99,
+    "url": "https://evora-eg.com/product/triple-chicken/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/chicken-triple-sauce-scaled.jpg?w=1000&ssl=1",
+    "d": "ثلاث قطع من صدور الدجاج المشوية، مع صوص المشروم والفلفل والمستردة.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 17,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-17",
+    "descriptionSource": "https://evora-eg.com/product/triple-chicken/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "3 PIECES OF GRILLED CHICKEN BREASTS COVERED WITH 3 SAUCES ( MUSHROOM – PEPPER – MUSTARD )"
+  },
+  {
+    "n": "Chicken Honey Dew",
+    "c": "Chicken Dishes",
+    "p": 314.99,
+    "url": "https://evora-eg.com/product/chicken-honey-dew/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/chicken-honey-dew-scaled.jpg?w=1000&ssl=1",
+    "d": "صدر دجاج مقرمش يعلوه مشروم مغطى بالعسل، ويُقدم مع العسل.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 18,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-18",
+    "descriptionSource": "https://evora-eg.com/product/chicken-honey-dew/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CRISPY CHICKEN BREAST TOPPED WITH HONEY GLAZED MUSHROOMS, SERVED WITH HONEY."
+  },
+  {
+    "n": "Monterey Chicken Grilled",
+    "c": "Chicken Dishes",
+    "p": 399.99,
+    "url": "https://evora-eg.com/product/monterey-chicken-grilled/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/monterey-grilled-chicken-scaled.jpg?w=1000&ssl=1",
+    "d": "صدر دجاج مشوي مع بيكون وصوص باربكيو وبصل وفلفل، مغطى بمزيج من الجبن.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 19,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-19",
+    "descriptionSource": "https://evora-eg.com/product/monterey-chicken-grilled/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "GRILLED CHICKEN BREAST WITH BACON, B.B.Q SAUCE, ONION, PEPPER, COATED WITH MIX CHEESE"
+  },
+  {
+    "n": "Monterey Chicken Crispy",
+    "c": "Chicken Dishes",
+    "p": 399.99,
+    "url": "https://evora-eg.com/product/monterey-chicken-crispy/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Monterey-Fried-Chicken-scaled.jpg?w=1000&ssl=1",
+    "d": "دجاج مقلي مقرمش مع بيكون وصوص باربكيو وبصل وفلفل، مغطى بمزيج من الجبن.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 20,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-20",
+    "descriptionSource": "https://evora-eg.com/product/monterey-chicken-crispy/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "FRIED COUNTRY CHICKEN WITH BACON, B.B.Q SAUCE, ONION, PEPPER, COATED WITH MIX CHEESE"
+  },
+  {
+    "n": "Evora Chicken",
+    "c": "Chicken Dishes",
+    "p": 399.99,
+    "url": "https://evora-eg.com/product/evora-chicken/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/chicken-evora-scaled.jpg?w=1000&ssl=1",
+    "d": "صدور دجاج مشوية مع جمبري سوتيه ومشروم وصوص أبيض.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 21,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "ÉVORA SIGNATURE",
+    "img": "evora-dish-21",
+    "descriptionSource": "https://evora-eg.com/product/evora-chicken/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "GRILLED CHICKEN BREASTS WITH SAUTÉED SHRIMP, MUSHROOMS & WHITE SAUCE."
+  },
+  {
+    "n": "French Toast Raspberry",
+    "c": "Dessert",
+    "p": 139.99,
+    "url": "https://evora-eg.com/product/french-toast-raspberry/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/raspberry-2-scaled.jpg?w=1000&ssl=1",
+    "d": "بريوش بالزبدة مقرمش من الخارج وطري من الداخل، بطبقات كريمة الرازبيري «توت العليق» وآيس كريم الفانيليا.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 22,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-22",
+    "descriptionSource": "https://evora-eg.com/product/french-toast-raspberry/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CRISPY OUTSIDE, SOFT INSIDE BUTTERED BRIOCHE, WITH LAYERS OF CREAMY RASPBERRY FILLING& VANILLA ICECREAM"
+  },
+  {
+    "n": "French Toast Lime Spirit",
+    "c": "Dessert",
+    "p": 139.99,
+    "url": "https://evora-eg.com/product/french-toast-lime-spirit/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/lime-1-scaled.jpg?w=1000&ssl=1",
+    "d": "بريوش بالزبدة مقرمش من الخارج وطري من الداخل، بطبقات كريمة اللايم وآيس كريم الفانيليا.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 23,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-23",
+    "descriptionSource": "https://evora-eg.com/product/french-toast-lime-spirit/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CRISPY OUTSIDE, SOFT INSIDE BUTTERED BIRIOCHE, WITH LAYERS OF CREAMY LIME FILLING& VANILLA ICECREAM"
+  },
+  {
+    "n": "Rigatoni Shrimp",
+    "c": "Pasta",
+    "p": 269.99,
+    "url": "https://evora-eg.com/product/rigatoni-shrimp/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/rigatoni-shrimp-scaled.jpg?w=1000&ssl=1",
+    "d": "باستا ريجاتوني أنبوبية مع الجمبري وصوص روزيه الوردي والأعشاب وجبنة البارميزان.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 24,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-24",
+    "descriptionSource": "https://evora-eg.com/product/rigatoni-shrimp/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "RIGATONI PASTA COOKED WITH SHRIMP, ROSE` SAUCE, HERBS AND PARMESAN CHEESE."
+  },
+  {
+    "n": "Crunchy Chicken Pasta",
+    "c": "Pasta",
+    "p": 209.99,
+    "url": "https://evora-eg.com/product/crunchy-chicken-pasta/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Crunchy-Chicken-Pasta.jpg?w=1000&ssl=1",
+    "d": "باستا بينّي بصوص كريمة المشروم، تعلوها قطع دجاج مقرمشة وجبنتا الشيدر والبارميزان.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 25,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-25",
+    "descriptionSource": "https://evora-eg.com/product/crunchy-chicken-pasta/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "PENNE PASTA WITH MUSHROOM CREAMY SAUCE, TOPPED WITH CHICKEN POPS, CHEDDAR & PARMESAN."
+  },
+  {
+    "n": "Farfalle Salmon",
+    "c": "Pasta",
+    "p": 269.99,
+    "url": "https://evora-eg.com/product/farfalle-salmon/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Farfalle-salmon-scaled.jpg?w=1000&ssl=1",
+    "d": "باستا فارفالي بشكل الفراشات، مع السلمون المدخن وصوص كريمي.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 26,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-26",
+    "descriptionSource": "https://evora-eg.com/product/farfalle-salmon/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "FARFALLE PASTA WITH SMOKED SALMON AND CREAMY SAUCE"
+  },
+  {
+    "n": "Capricciosa Pizza",
+    "c": "Pizza",
+    "p": 199.99,
+    "url": "https://evora-eg.com/product/capricciosa-pizza/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/capriciosa--scaled.jpg?w=1000&ssl=1",
+    "d": "بيتزا بموزاريلا وجبنة كريمية ومشروم طازج وبيكون بقري وزعتر.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 27,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-27",
+    "descriptionSource": "https://evora-eg.com/product/capricciosa-pizza/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "MOZZARELLA CHEESE, CREAM CHEESE, FRESH MUSHROOM WITH BEEF BACON AND THYME"
+  },
+  {
+    "n": "Pizza Burrata",
+    "c": "Pizza",
+    "p": 339.99,
+    "url": "https://evora-eg.com/product/pizza-burrata/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/09/IMG_9524.jpg?w=1000&ssl=1",
+    "d": "بيتزا بجبنة البوراتا الإيطالية والبيكون البقري وطماطم شيري وجبنة بارميزان.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 28,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-28",
+    "descriptionSource": "https://evora-eg.com/product/pizza-burrata/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "BURRATA CHEESE, BEEF BACON, CHERRY TOMATO, PARMESAN CHEESE"
+  },
+  {
+    "n": "Diavola Picante Pizza",
+    "c": "Pizza",
+    "p": 239.99,
+    "url": "https://evora-eg.com/product/diavola-picante-pizza/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Diavola-Pizza-scaled.jpg?w=1000&ssl=1",
+    "d": "بيتزا حارة بصوص الطماطم والموزاريلا وشرائح البيبروني والفلفل الحار.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 29,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-29",
+    "descriptionSource": "https://evora-eg.com/product/diavola-picante-pizza/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "TOMATO SAUCE, MOZZARELLA CHEESE, WITH PEPPERONI SLICES AND HOT PEPPER."
+  },
+  {
+    "n": "Mexican",
+    "c": "Salads",
+    "p": 219.99,
+    "url": "https://evora-eg.com/product/mexican/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Mexican-Salad-scaled.jpg?w=1000&ssl=1",
+    "d": "خس وأفوكادو وفاصوليا حمراء وذرة وطماطم شيري وشرائح لحم بقري وبصل وفلفل وهالبينو، مع صوص مكسيكي ورقائق تورتيلا مقرمشة.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 30,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-30",
+    "descriptionSource": "https://evora-eg.com/product/mexican/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "LETTUCE, AVOCADO, RED BEANS, SWEET CORN, CHERRY TOMATOES, TENDER BEEF SLICES, ONION SLICES, BELL PEPPERS, JALAPENO,WITH MEXICAN SAUCE AND CRISPY TORTILLA CHIPS"
+  },
+  {
+    "n": "Chicken Quinoa",
+    "c": "Salads",
+    "p": 229.99,
+    "url": "https://evora-eg.com/product/chicken-quinoa/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Quinoa-Salad.png?w=1000&ssl=1",
+    "d": "سلطة دجاج مشوي وكينوا مع خس وجرجير وفلفل وأناناس وتفاح وسويت تشيلي، وبذور شيا ولوز وشيدر أحمر.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 31,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-31",
+    "descriptionSource": "https://evora-eg.com/product/chicken-quinoa/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "LETTUCE,, ARUGULA, BELL PEPPERS, SWEET CHILI, PINEAPPLE, APPLE, GRILLED CHICKEN, QUINOA, CHIA SEEDS,ALMOND, RED CHEDDAR"
+  },
+  {
+    "n": "Buratta Salad",
+    "c": "Salads",
+    "p": 249.99,
+    "url": "https://evora-eg.com/product/buratta-salad/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/09/IMG_9525-1.jpg?w=1000&ssl=1",
+    "d": "بوراتا إيطالية على خس وجرجير وفلفل وريحان ونعناع وطماطم شيري، مع ليمون وزيت زيتون وبيستو وبندق محمص.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 32,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-32",
+    "descriptionSource": "https://evora-eg.com/product/buratta-salad/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "ITALIAN BURRATA CHEESE, SERVED ON A BED OF HOUSE SALAD ( LETTUCE, ARUGULA, PEPPER, BASIL& MINT LEAVE, CHERRY TOATOS, SEASONED WITH LEMON OLIVE OIL), PESTO, GARNISHED WITH MICRO GREENS& \nROASTED HAZELNUTS"
+  },
+  {
+    "n": "Roasted Salmon",
+    "c": "Seafood",
+    "p": 464.99,
+    "url": "https://evora-eg.com/product/roasted-salmon/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/IMG_9528-scaled.jpeg?w=1000&ssl=1",
+    "d": "ستيك سلمون محمّر، مغطى بصوص كريمة الليمون.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 33,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-33",
+    "descriptionSource": "https://evora-eg.com/product/roasted-salmon/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "ROASTED SALMON STEAK , GLAZED WITH CREAMY LEMON SAUCE"
+  },
+  {
+    "n": "Crispy Mix Seafood",
+    "c": "Seafood",
+    "p": 399.99,
+    "url": "https://evora-eg.com/product/crispy-mix-seafood/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/IMG_9527-scaled.jpeg?w=1000&ssl=1",
+    "d": "سمك وجمبري وكاليماري مقرمش على طريقة إيڤورا، يُقدم مع صوص زبدة الليمون.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 34,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-34",
+    "descriptionSource": "https://evora-eg.com/product/crispy-mix-seafood/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "EVORA STYLE CRISPY FISH, SHRIMP, AND CALAMARI, SERVED WITH LEMON BUTTER SAUCE."
+  },
+  {
+    "n": "Mushroom",
+    "c": "Soups",
+    "p": 99.99,
+    "url": "https://evora-eg.com/product/mushroom/",
+    "image": "https://i0.wp.com/evora-eg.com/wp-content/uploads/2025/08/Mushroom-Soup.jpg?w=1000&ssl=1",
+    "d": "شوربة كريمية بالمشروم الطازج.",
+    "source": "https://evora-eg.com/menu-restaurant/",
+    "id": 35,
+    "a": 1,
+    "e": "🍽",
+    "sz": [
+      [
+        "Standard",
+        0
+      ]
+    ],
+    "ex": [],
+    "tag": "",
+    "img": "evora-dish-35",
+    "descriptionSource": "https://evora-eg.com/product/mushroom/",
+    "descriptionStatus": "official-ingredients",
+    "originalDescription": "CREAMY FRESH MUSHROOM SOUP."
+  }
+]
